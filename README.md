@@ -20,31 +20,53 @@ It is a tool used to extract domains that are of great importance in the context
 
 - **Flexible HTTP Methods:** Supports various HTTP methods (GET, POST, PUT, DELETE, PATCH), providing flexibility in request types for different testing scenarios.
 
+## Installation
 
+To get started with the  PR0F_D-Hunt , follow these steps:
+
+1. Clone this repository:
+
+```bash
+git clone https://github.com/PR0F0X01/PR0F_D-Hunt.git
+cd  PR0F_D-Hunt
+```
+
+2. Install the required dependencies:
+
+```bash
+pip3 install -r requirements.txt
+```
 ## Usage
-1. Clone the repository to your local machine:
-   ```
-   git clone https://github.com/PR0F0X01/PR0F_D-Hunt.git
-   ```
+python3 PR0F_D-Hunt.py -h                       
+usage: PR0F_D-Hunt.py [-h] -f FILE -o OUTPUT [-p PROXY] -s STATUS [-os OUTPUT_SEARCH] [-m {GET,POST,PUT,DELETE,PATCH}]
+                      [-H HEADERS] [-t THREADS]
 
-2. Navigate to the directory:
-   ```
-   cd PR0F_D-Hunt
-   ```
+Download responses from given URLs.
 
-3. Run the script with the necessary arguments:
-   ```
-   python3 domain_security_tool.py -f <file_path> -o <output_folder> -s <status_codes> -m <method> ...
-   ```
-   - Replace `<file_path>` with the path to the file containing URLs.
-   - Replace `<output_folder>` with the desired output folder path.
-   - Replace `<status_codes>` with the status codes to save, separated by commas.
-   - Replace `<method>` with the desired HTTP method (optional).
-
-## Requirements
-- Python 3.x
-- Requests library (install via pip: `pip install  -r requests`)
+options:
+  -h, --help            show this help message and exit
+  -f FILE, --file FILE  Path to file containing URLs.
+  -o OUTPUT, --output OUTPUT
+                        Output folder path.
+  -p PROXY, --proxy PROXY
+                        Proxy server address.
+  -s STATUS, --status STATUS
+                        Status codes to save, comma-separated.
+  -os OUTPUT_SEARCH, --output-search OUTPUT_SEARCH
+                        Output file path to save URLs containing search keywords.
+  -m {GET,POST,PUT,DELETE,PATCH}, --method {GET,POST,PUT,DELETE,PATCH}
+                        HTTP method to use for requests.
+  -H HEADERS, --headers HEADERS
+                        Custom headers to include in the request.
+  -t THREADS, --threads THREADS
+                        Number of concurrent threads.
 
 ## License
-This project is licensed under the MIT License .
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+We welcome contributions from the community. If you'd like to contribute, please fork the repository and create a pull request.
+
 ```
