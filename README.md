@@ -3,8 +3,9 @@
 
 ```markdown
 # PR0F_D-Hunt
-## Description
-It is a tool used to extract domains that are of great importance in the context of security testing and to search for security vulnerabilities in login pages that require authentication.
+
+This tool is utilized for extracting crucial domains during security assessments, simplifying the scanning process, and swiftly identifying domains hosting various essential functionalities for testing, including multifaceted functions like login pages and related domains.
+
 ## Features
 - **Domain Filtering:** The script filters domains based on specified criteria, allowing users to focus on extracting domains with high importance.
  
